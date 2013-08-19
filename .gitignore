@@ -216,3 +216,6 @@ pip-log.txt
 
 *.sublime-project
 *.sublime-workspace
+ajaxed_todo_list_tutozine/
+.gitattributes
+demo.zip
