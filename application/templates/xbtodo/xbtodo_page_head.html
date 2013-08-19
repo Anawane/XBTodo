@@ -1,0 +1,16 @@
+<title>{{page_title}}</title>
+{{#responsive}}
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+{{/responsive}}
+{{#add_styling}}
+<link href="{{assets_css_folder}}bootstrap.min.css" rel="stylesheet" media="screen">
+<link href="{{assets_css_folder}}bootstrap-glyphicons.css" rel="stylesheet" media="screen">
+{{/add_styling}}
+{{#add_custom_css_files}}
+<link href="{{css_file}}" rel="stylesheet" media="screen">
+{{/add_custom_css_files}}
+{{#add_inline_css}}
+<style type="text/css">
+{{{inline_css}}}
+</style>
+{{/add_inline_css}}

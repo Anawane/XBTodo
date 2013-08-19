@@ -1,0 +1,30 @@
+{{#add_needed_javascript}}
+<script type="text/javascript" src="{{assets_js_folder}}jquery.min.js"></script>
+<script type="text/javascript" src="{{assets_js_folder}}bootstrap.min.js"></script>
+<script type="text/javascript" src="{{assets_js_folder}}respond.min.js"></script>
+{{/add_needed_javascript}}
+{{#navbar_template_needed_javascript}}
+<script type="text/javascript" src="{{assets_js_folder}}typeahead.min.js"></script>
+<script type="text/javascript">
+	$('.navbar form[role="search"] .form-group input[type="search"]').typeahead([
+		{
+			name: 'accounts',
+			local: ['timtrueman', 'JakeHarding', 'vskarich', 'timtrueman2', 'JakeHarding2', 'vskarich2'],
+			header: '<p class="tt-header">accounts</p>'
+		},
+		{
+			name: 'names',
+			local: ['timtrueman', 'JakeHarding', 'vskarich', 'timtrueman2', 'JakeHarding2', 'vskarich2'],
+			header: '<p class="tt-header">names</p>'
+		}
+	]);
+</script>
+{{/navbar_template_needed_javascript}}
+{{#add_custom_javascript_files}}
+<script type="text/javascript" src="{{js_file}}"></script>
+{{/add_custom_javascript_files}}
+{{#add_inline_javascript}}
+<script type="text/javascript">
+{{inline_script}}
+</script>
+{{/add_inline_javascript}}

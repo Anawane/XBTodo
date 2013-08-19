@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>XBcmp's todo list system installation</title>
+	</head>
+	<body>
+		<h1>Welcome to XBcmp's todo list system installation !</h1>
+		<p>Please configure the system before running it.</p>
+		<p>All inputs with * must be specified.</p>
+		<form action="index.php" method="post">
+			<input type="hidden" name="p" value="ins2" />
+			<h3>Naming the system</h3>
+			<label for="sysname">System name* :</label>
+			<input type="text" id="syssname" name="sysname" value="Company's Todo" /><br /><br />
+			<label for="sysname">System short name* :</label>
+			<input type="text" id="syssname" name="syssname" value="Cmp Todo" />
+			<h3>System paths</h3>
+			<label for="index">Index file* :</label>
+			<input type="text" id="index" name="index" value="index.php" /><br /><br />
+			<label for="css">Css folder* :</label>
+			<input type="text" id="css" name="css" value="assets/css/" /><br /><br />
+			<label for="js">Js folder* :</label>
+			<input type="text" id="js" name="js" value="assets/js/" /><br /><br />
+			<label for="img">Images folder* :</label>
+			<input type="text" id="img" name="img" value="assets/img/" />
+			<h3>Accounts</h3>
+			<label for="login">Enable login ?* (type "true" or "false") :</label>
+			<input type="text" id="login" name="login" value="false" /><br /><br />
+			<label for="user">Your username (required if you type true in "Enable login ?") :</label>
+			<input type="text" id="user" name="user" value="Admin" /><br /><br />
+			<label for="user">Your password (required if you type true in "Enable login ?") :</label>
+			<input type="password" id="user" name="user" value="pass" />
+			<h3>Submit</h3>
+			<p>No more configuration required.</p>
+			<button type="submit">Continue</button>
+		</form>
+	</body>
+</html>
